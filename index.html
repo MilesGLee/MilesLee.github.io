@@ -21,19 +21,63 @@
         }
         .hyperlink1{
             color:white;
+            text-decoration: none;
         }
         .hyperlink1:hover{
             color:gray;
         }
-        .white{
+        .title{
             color:white;
-        }
-        h1{
-            /* border-bottom: 4mm ridge rgb(23, 96, 138); */
             text-align: center;
             padding-bottom: 10px;
             background-color: rgb(41, 80, 126);
             margin: 0;
+        }
+        .subtitle{
+            color:white;
+            text-align: center;
+            padding-top: 10px;
+            margin: 0;
+        }
+        .projects{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: rgb(204, 204, 204);
+            margin-top: 10px;
+            gap:50px;
+            padding:10px;
+        }
+        .project{
+            flex:1;
+            text-align:center;
+            inline-size: 380px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .projectTitle{
+            background-color: rgb(65, 65, 65);
+        }
+        .projectThumbnail{
+            /*background-color: rgb(65, 65, 65);*/
+            padding:10px;
+        }
+        .projectDescription{
+            /*background-color: rgb(133, 133, 133);*/
+            word-wrap: break-word;
+        }
+        .thumbnail{
+            color:white;
+            padding:0px;
+        }
+        .description{
+            color:rgb(58, 58, 58);
+            font-size: 1.1rem;
+        }
+
+        @media (min-width: 920px) {
+            .projects {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
     </style>
 </Head>
@@ -42,12 +86,54 @@
     
     <div class="container">
     <div class="links">
-        <a class="hyperlink1" target="_blank" rel="Click here" href="index.html">HOME</a> |
+        <a class="hyperlink1" target="_blank" href="https://resume.creddle.io/resume/8dv6s9ledco">RESUME</a> |
         <a class="hyperlink1" target="_blank" href="https://github.com/MilesGLee" >GITHUB</a> |
         <a class="hyperlink1" target="_blank" href="https://www.linkedin.com/in/miles-lee-641131241/" >LINKEDIN</a> 
     </div>
-    <h1 class="white">Miles Lee</h1>
+    <h1 class="title">Miles Lee</h1>
     </div>
+
+    <h1 class="subtitle">Projects</h1>
+    <div class="projects">
+
+        <div class="project">
+            <div class="projectTitle">
+                <a class="thumbnail"></a>
+            </div>
+            <div class="projectThumbnail">
+                <a class="thumbnail" target="_blank" href="https://sidequestvr.com/app/1210/elemental-arts-vr"><img src="https://cdn.sidequestvr.com/file/90027/elemental-arts-logopng.png"width="100%"></a> 
+            </div>
+            <div class="projectDescription">
+                <a class="description">Elemental Arts is a VR game that allows the player to control the basic elements by performing hand movements. I was the lead programmer for Elemental Arts and programmed for both Valve and Oculus VR headsets.</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="projectTitle">
+                <a class="thumbnail"></a>
+            </div>
+            <div class="projectThumbnail">
+                <a class="thumbnail" target="_blank" href="https://paperblaster.itch.io/paper-blaster"><img src="https://img.itch.zone/aW1nLzkyMTY3MDMucG5n/original/YgQSlQ.png"width="100%"></a> 
+            </div>
+            <div class="projectDescription">
+                <a class="description">Paper blaster is a team made project that was based on the arcade game Asteroid. I programmed the player and the UI. </a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="projectTitle">
+                <a class="thumbnail"></a>
+            </div>
+            <div class="projectThumbnail">
+                <a class="thumbnail" target="_blank" href="https://theequinox.itch.io/equinox"><img src="https://img.itch.zone/aW1nLzEyNDE3MDAzLnBuZw==/original/v6SwAG.png" width="100%"></a> 
+            </div>
+            <div class="projectDescription">
+                <a class="description">Equinox is a team made third person adventure puzzle game. I programmed the player, players shadow movement, and interactions. </a>
+            </div>
+        </div>
+        
+    </div>
+    
 </body>
 
 </html>
